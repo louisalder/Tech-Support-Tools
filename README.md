@@ -6,7 +6,7 @@ The software is used to speed up the gathering information element of a technica
 
 The program uses a mix of python libraries, and embedded poweshell scripts to gather the information.
 
-The program was created in 2022 as a project for university. This is no longer being maintained and is provided here as part of my portfolio to showcase a python project. Feel free to explore the code, but please note that it may not be up-to-date with the latest technologies or practices.
+I created the program in 2022 to help speed up workflows in the Technical Support team I was part of at the time. This is no longer being maintained and is provided here as part of my portfolio to showcase a python project. Feel free to explore the code, but please note that it may not be up-to-date with the latest technologies or practices. Company specific information and logos have been redacted.
 
 
 ### What does the software gather? 
