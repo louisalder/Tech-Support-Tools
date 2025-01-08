@@ -1,0 +1,18 @@
+body{
+    background-color: #292929; 
+    color:  white;
+}
+
+h1{
+    color: white; text-align: center;
+}
+
+.help{
+
+    display:flex; flex-direction: column; background-color: grey; border-radius: 25px; padding-top: 20px; padding-bottom: 20px;
+}
+
+.TC{
+    display:flex; align-content: space-around 10px; flex-direction: column; background-color: grey; border-radius: 25px; padding: 20px; margin-top: 20px;
+}
+
