@@ -37,7 +37,7 @@ The app has a commandline version and a graphical user interface (GUI) version.
 The GUI version was created with CustomTKinter, which easily allowed a light and dark mode, and scaling. Credit to TomSchimansky for the package:
 https://github.com/TomSchimansky/CustomTkinter
 
-### Commandline version example
+### Commandline version example:
 <img width="608" alt="image" src="https://github.com/user-attachments/assets/831b7044-f4e4-4371-99b1-c23be5184edc" />
 
 ## GUI version example:
