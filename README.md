@@ -1,12 +1,17 @@
 # TechSupport-Tools
 
-## <b>About</b>
+## About
 
-The software is used to speed up the gathering information element of a technical support ticket. The software extracts machine information such as OS version info, machine specs, installed software, network details (hostname, ip address, etc.) and puts it into a single combined txt file.
+The software is used to speed up the gathering information element of a technical support ticket. The software extracts machine information such as OS version info, machine specs, installed software, etc. See the below section for full functionality.
 
 The program uses a mix of python libraries, and embedded poweshell scripts to gather the information.
 
+The program was created in 2022 as a project for university. This is no longer being maintained and is provided here as part of my portfolio to showcase a python project. Feel free to explore the code, but please note that it may not be up-to-date with the latest technologies or practices.
+
+
 ### What does the software gather? 
+
+The software currently enables the user to easily gather the following quickly:
 
 1. Hardware info, RAM, CPU, etc.
 2. OS Version, build etc.
@@ -16,11 +21,13 @@ The program uses a mix of python libraries, and embedded poweshell scripts to ga
 6. Hosts file info (for systems without DNS)
 7. Product versions
 
+The information gathered can be tweaked for your use case and extra functionality can be added in.
+
 Regarding product versions, these are gathered through the use of a powershell script. You can add on additional programs for the tool to scan within the DevProject.py document:
 
 `command = "Get-ItemProperty HKLM:\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\* | Where-Object {$_.DisplayName -like '*Python*' -or $_.DisplayName -like '*SQL*' -or $_.DisplayName -like '*.NET*'} | Select-Object DisplayName, DisplayVersion, Publisher, InstallDate | Format-Table –AutoSize"`
 
-For example, you could add the following into the command: '$_.DisplayName -like '*DaVinci Resolve*'
+For example, you could add the following into the command: `'$_.DisplayName -like '*DaVinci Resolve*'`
 
 
 
@@ -66,7 +73,7 @@ End user instructions are contained in the product help file. There is a button 
 1. Open the program as an administrator
 2. When the command prompt opens, type in 1 to initilise the program
 3. Check the application directory and look for the config.txt file
-4. Copy the file onto a machine with internet connection if the machine you are using doesn't have access and send to relevent techsupport team 
+4. Copy the file onto a machine with internet connection if the machine you are using doesn't have access, and send to relevent techsupport team 
 
 
 
@@ -91,11 +98,15 @@ Windows 11 Enterprise / Professional
 NOTE: The software will not work on Windows 10 Home Edition, as registry keys in this version differ to Enterprise versions of Windows
 
 
-# Bugs
+# Bugs 🪲
 Currently, the following methods are commented out as they don't work as expected:
 1. Test for IPV6
 2. Test for Windows Defender
 3. Test for Firewall
+
+# Proposed new features 🔧
+1. Support for cross OS
+2. Better formatted output file support, i.e., excel spreadsheet with nicely formatted information
 
 # Feedback and Contributions
 If you have ideas or find bugs, feel free to open an issue or contribute with a pull request!
