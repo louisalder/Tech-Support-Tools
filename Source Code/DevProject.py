@@ -117,22 +117,6 @@ class diagnostic_tool:
 
 
 
-    # # powershell script to see if UAC is enabled -- doesn't work
-
-    # def uac(self):
-    #     try:
-    #         result = subprocess.run(["reg", "query", "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System", "/v", "EnableLUA"], capture_output=True, text=True)
-    #         if "0x1" in result.stdout:
-    #             print("UAC is enabled")
-    #         else:
-    #             print("UAC is not enabled")
-    #     except Exception as e:
-    #         print("Error: unable to determine if UAC is enabled")
-    #         return None
-
-
-
-
     def ram(self):
 
         '''
