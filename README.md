@@ -83,7 +83,7 @@ End user instructions are contained in the product help file. There is a button 
 2. Click on the "Start" button
 3. Check the application directory and look for the config.txt file
 4. Copy the file onto a machine with internet connection if the machine you are using doesn't have access
-5. Open the secure FTP link provided by the engineer at SolutionsPT. If this has not been created yet, contact the engineer who is working on the support case and get them to set this up
+5. Open the secure FTP link provided by the engineer. If this has not been created yet, contact the engineer who is working on the support case and get them to set this up
 6. Enter the provided password
 7. Drop and drag, or select the 'upload' button and locate the config.txt file
 8. If you have any problems with any of the above steps, please contact the engineer who is working on your support case.
